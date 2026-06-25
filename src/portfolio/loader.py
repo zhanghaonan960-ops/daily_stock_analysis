@@ -21,7 +21,7 @@ def load_portfolio_from_env() -> list[Position]:
         line = line.strip()
         if not line:
             continue
-
+ 
         parts = [x.strip() for x in line.split(",")]
         if len(parts) != 3:
             continue
